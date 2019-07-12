@@ -8,13 +8,15 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("build/css"));
 });
 
-// gulp.task("autoprefixer", function(){
-//     let postcss = require("gulp-postcss")
-//     let sourcemaps = require("gulp-sourcemaps")
-//     let autoprefixer = require("autoprefixer")
+gulp.task("autoprefixer", function() {
+  let postcss = require("gulp-postcss");
+  let sourcemaps = require("gulp-sourcemaps");
+  let autoprefixer = require("autoprefixer");
 
-//     return gulp.src("build/css/styles.css")
-//     .pipe(sourcemaps.init())
-//     .pipe(postcss([autoprefixer()]))
-//     .pipe()
-// })
+  return gulp
+    .src("build/css/styles.css")
+    .pipe(sourcemaps.init())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"));
+});
