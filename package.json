@@ -19,6 +19,9 @@
   "homepage": "https://github.com/dnavejas/build-pipeline#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "autoprefixer": "^9.6.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }
