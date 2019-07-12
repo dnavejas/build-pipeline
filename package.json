@@ -1,0 +1,24 @@
+{
+  "name": "build-pipeline",
+  "version": "1.0.0",
+  "description": "build-pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnavejas/build-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnavejas/build-pipeline/issues"
+  },
+  "homepage": "https://github.com/dnavejas/build-pipeline#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
