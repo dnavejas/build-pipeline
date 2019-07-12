@@ -1,5 +1,11 @@
 let gulp = require("gulp");
 let sass = require("gulp-sass");
+let runSequence = require("run-sequence");
+
+gulp.task("build", function() {
+  console.log("Running Build");
+  runSequence("sass", "autoprefixer", "uncss");
+});
 
 gulp.task("sass", function() {
   return gulp
