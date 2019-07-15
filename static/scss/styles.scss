@@ -11,17 +11,17 @@
 #top-movies {
   display: flex;
   flex-wrap: wrap;
-  /* width: 100vw; */
+  width: 100vw;
   text-align: center;
 }
 #top-movies > div {
   flex: 0 18%;
 }
-.card {
-  flex: 5;
-  margin: 10px;
-  flex-wrap: wrap;
-}
+// .card {
+//   flex: 5;
+//   margin: 10px;
+//   flex-wrap: wrap;
+// }
 .actor-images {
   height: 200px;
   width: 200px;
